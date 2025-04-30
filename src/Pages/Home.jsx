@@ -3,8 +3,8 @@ import React from 'react'
 import Lay from '../Lay'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import { useNavigate } from 'react-router';
 // import Primeira_slid from '../Componentes/Primeira_slid';
-import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const[index, setIndex] = React.useState(0);
@@ -12,7 +12,8 @@ const Home = () => {
         setIndex(selectedIndex);
       };
 
-      const navegate = useNavigate();
+    const navigate = useNavigate();
+
   return (
     <Lay>
        

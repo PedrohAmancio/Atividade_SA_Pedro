@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Cadastro from "./Pages/Cadastro"
+import Sobre from "./Pages/Historia"
 
 //Importação das páginas
-import App from "./App.jsx";
-import Home from "./Pages/Home.jsx";
-import Cadastro from "./Pages/Cadastro.jsx";
-import Login from "./Pages/Login.jsx";
-import Contato from "./pages/Contato.jsx";
+
 const Rotas = createBrowserRouter([
   {
     path: "/",
