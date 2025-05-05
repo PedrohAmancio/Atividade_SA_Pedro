@@ -3,24 +3,19 @@ import React from 'react'
 import Lay from '../Lay'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import { useNavigate } from 'react-router';
+import {useNavigate} from  'react-router-dom' ;
 // import Primeira_slid from '../Componentes/Primeira_slid';
 
 const Home = () => {
-    const[index, setIndex] = React.useState(0);
+    const [index, setIndex] = React.useState(0);
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
       };
 
-    const navigate = useNavigate();
-
   return (
-    <Lay>
-       
     <div>
         {/* <Primeira_slid/> */}
-    </div>
-
+        <Lay>
 {/* Cartões */}
     <CardGroup>
       <Card>
@@ -32,7 +27,8 @@ const Home = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <button variant="primary" style={{width:"100%", backgroundColor:"#3840BA"}} onClick={() => navigate("/DetalhesMecanica")} className="btn btn-primary">Matricular-se</button>
+        <button variant="primary" style={{width:"100%", backgroundColor:"#3840BA"}} 
+         className="btn btn-primary">Matricular-se</button>
         </Card.Footer>
       </Card>
       <Card>
@@ -63,6 +59,7 @@ const Home = () => {
     {/* Fim dos Cartões */}
 
     </Lay>
+    </div>
   )
 }
 

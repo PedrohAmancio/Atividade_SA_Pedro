@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 
-const [senha, setSenha] = useState("");
-const [confirmarSenha, setConfir] = useState("");
-const [email, setEmail] = useState("");
-const [nome, setNome] = useState("");
+const Login = () => {
 
-const validarEmail = (email) => {
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return regex.test(email);
-};
+    const [senha, setSenha] = useState("");
+    const [confirmarSenha, setConfir] = useState("");
+    const [email, setEmail] = useState("");
+    const [nome, setNome] = useState("");
 
-const cadastro = () => {
+    const validarEmail = (email) => {
+        const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return regex.test(email);
+    };
+
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
     const usuarioExistente = users.find((user) => user.email === email);
