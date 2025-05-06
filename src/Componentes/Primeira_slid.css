@@ -1,0 +1,29 @@
+/* Estilo geral para as imagens do Carousel */
+.Imagem_senai_01,
+.Imagem_senai_02 {
+  width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+  height: 400px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente, se necessário */
+  border-radius: 10px; /* Bordas arredondadas para um visual mais agradável */
+}
+
+/* Estilo para o Carousel */
+.carousel {
+  max-width: 1200px; /* Largura máxima do Carousel */
+  margin: 20px auto; /* Centraliza o Carousel na página com margem superior e inferior */
+  border-radius: 10px; /* Bordas arredondadas no contêiner do Carousel */
+  overflow: hidden; /* Garante que as bordas arredondadas sejam aplicadas corretamente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .Imagem_senai_01,
+  .Imagem_senai_02 {
+    height: 250px; /* Reduz a altura das imagens em telas menores */
+  }
+
+  .carousel {
+    max-width: 100%; /* O Carousel ocupa toda a largura da tela em dispositivos menores */
+  }
+}

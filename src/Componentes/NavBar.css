@@ -1,0 +1,39 @@
+/* Estilo geral do Navbar */
+.custom-navbar {
+    height: 80px; /* Altura ajustada */
+    display: flex;
+    align-items: center;
+    background-color: #003366; /* Azul escuro */
+  }
+  
+  /* Estilo do logo */
+  .navbar-logo {
+    width: 120px; /* Largura ajustada */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaçamento entre o logo e os links */
+  }
+  
+  /* Estilo dos links */
+  .navbar-links .nav-link {
+    color: #ffffff; /* Branco */
+    font-size: 2000px; /* Tamanho da fonte */
+    font-weight: bold;
+    margin-right: 2000000px; /* Espaçamento entre os links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links .nav-link:hover {
+    color: #00aaff; /* Azul claro ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar-logo {
+      width: 100px; /* Reduz o tamanho do logo em telas menores */
+    }
+  
+    .navbar-links .nav-link {
+      font-size: 16px; /* Reduz o tamanho da fonte dos links */
+    }
+  }

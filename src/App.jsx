@@ -1,28 +1,16 @@
-import { useState } from 'react'
-
-import './App.css'
-import Home from './Pages/Home'
-import Login from './Pages/Login'
-import { Router } from 'react-router'
-import Cadastro from './Pages/Cadastro'
-import Sobre from "./Pages/Historia"
-import DetalhesMecanica from "./Pages/DetalhesMecanica"
-
+import { Outlet } from "react-router"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "react-bootstrap/esm/Container";
+import Lay from "./Componentes/Lay";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/DetalhesMecanica" element={<DetalhesMecanica />} />
-      </Routes>
-    </Router>
+    <div className="App" style={{margin : "0", paddingLeft:"0", paddingBottom:"0", paddingRight:"0", width:"100%", height:"100%"}}>
+    <Lay/>
+    <Container style={{margin : "0", paddingLeft:"0", paddingBottom:"0", paddingRight:"0", width:"100%", height:"100%"}}>
+    <Outlet />
+    </Container>
+    </div>
     </>
   )
 }

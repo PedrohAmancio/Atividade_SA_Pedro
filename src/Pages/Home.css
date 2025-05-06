@@ -1,0 +1,59 @@
+/* Estilo geral para o grupo de cartões */
+.card-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin: 20px auto; /* Margem superior e inferior */
+    max-width: 1200px; /* Largura máxima do grupo */
+  }
+  
+  /* Estilo individual dos cartões */
+  .card {
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animação ao passar o mouse */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
+  /* Estilo para as imagens dos cartões */
+  .card-img-top {
+    border-top-left-radius: 10px; /* Bordas arredondadas na parte superior */
+    border-top-right-radius: 10px;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+  }
+  
+  /* Estilo para os títulos */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3840BA; /* Azul escuro */
+    text-align: center;
+  }
+  
+  /* Estilo para os textos */
+  .card-text {
+    font-size: 1rem;
+    color: #555; /* Cinza escuro */
+    text-align: justify;
+  }
+  
+  /* Estilo para o botão */
+  .card-footer .btn-primary {
+    background-color: #3840BA; /* Azul escuro */
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .card-footer .btn-primary:hover {
+    background-color: #2a2f8e; /* Azul mais escuro ao passar o mouse */
+  }

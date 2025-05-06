@@ -4,8 +4,8 @@ import Lay from '../Lay'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import {useNavigate} from  'react-router-dom' ;
-// import Primeira_slid from '../Componentes/Primeira_slid';
-
+import Primeira_slid from '../Componentes/Primeira_slid';
+import './Home.css';
 const Home = () => {
     const [index, setIndex] = React.useState(0);
     const handleSelect = (selectedIndex, e) => {
@@ -14,8 +14,8 @@ const Home = () => {
 
   return (
     <div>
-        {/* <Primeira_slid/> */}
         <Lay>
+        <Primeira_slid/>
 {/* Cartões */}
     <CardGroup>
       <Card>
