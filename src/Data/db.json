@@ -1,0 +1,24 @@
+{
+  "Usuario": [
+	{
+        "id": 1,
+        "nome": "Pedro",
+        "email": "pedro@gmail.com",
+        "senha": "N4aotemsenha"
+	},
+
+    {
+        "id": 2,
+        "nome": "Barbara",
+        "email": "barbara@gmail.com",
+        "senha": "N4aotemsenha"
+	},
+
+    {
+        "id": 1,
+        "nome": "Maluco",
+        "email": "maluco@gmail.com",
+        "senha": "N4aotemsenha"
+	}
+  ]
+}

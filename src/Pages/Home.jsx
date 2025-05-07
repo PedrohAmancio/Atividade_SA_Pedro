@@ -52,7 +52,7 @@ const Home = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <button className="btn btn-primary">Matricular-se</button>
+        <button className="btn btn-primary" onClick={"/DetalhesDds"}>Matricular-se</button>
         </Card.Footer>
       </Card>
     </CardGroup>

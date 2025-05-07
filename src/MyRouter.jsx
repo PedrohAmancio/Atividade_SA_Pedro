@@ -1,25 +1,26 @@
 import './App.css'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Cadastro from './Pages/Cadastro'
 import Sobre from "./Pages/Historia"
 import DetalhesMecanica from "./Pages/DetalhesMecanica"
+import DetalhesDds from "./Pages/DetalhesDds"
+import DetalhesEletrica from "./Pages/DetalhesEletrica"
+import React from "react";
 
-function MyRouter() {
+const MyRouter= () => {
   return (
-    <>
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/DetalhesMecanica" element={<DetalhesMecanica />} />
-    </Routes>
+    
+    <BrowserRouter>
+        <Route Component={Home} path="/" exact />
+        <Route Component={Login} path="/Login"  />
+        <Route Component={Cadastro} path="/Cadastro" />
+        <Route Component={DetalhesMecanica} path="/DetalhesMecanica"  /> 
+        <Route Component={DetalhesDds} path="/DetalhesDds"  /> 
+        <Route Component={DetalhesEletrica} path="/DetalhesEletrica"  /> 
     </BrowserRouter>
-    </>
+   
   )
 }
 
