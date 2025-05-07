@@ -3,7 +3,7 @@ import React from 'react'
 import Lay from '../Lay'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import {useNavigate} from  'react-router-dom' ;
+
 import Primeira_slid from '../Componentes/Primeira_slid';
 import './Home.css';
 const Home = () => {
@@ -52,7 +52,7 @@ const Home = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <button className="btn btn-primary" onClick={"/DetalhesDds"}>Matricular-se</button>
+        {/* <button className="btn btn-primary" onClick={"/DetalhesDds"}>Matricular-se</button> */}
         </Card.Footer>
       </Card>
     </CardGroup>
