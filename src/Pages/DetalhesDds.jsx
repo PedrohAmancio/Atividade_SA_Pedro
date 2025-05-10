@@ -1,7 +1,8 @@
 import React from 'react'
 import Lay from '../Lay'
-import Quarto_slid from '../Componentes/Quarto_slid'
-const DetalhesMecanica = () => {
+import Quarto_slid from '../Componentes/Quarto_slid';
+
+function DetalhesDds() {
   return (
     
     <div>
@@ -34,4 +35,4 @@ Idade Mínima: 14 anos
   )
 }
 
-export default DetalhesMecanica
+export default DetalhesDds

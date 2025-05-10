@@ -1,11 +1,13 @@
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ExampleCarouselImage from './ExampleCarouselImage';
+import Lay from '../Lay';
 
-const Quarto_slid = () => {
+export default function Quarto_slid() {
   return (
-    <><Lay>
-         
-      </Lay><Carousel>
+    <>
+    <Lay>
+         <Carousel>
               <Carousel.Item>
                   <ExampleCarouselImage variant="top" src="https://s5.static.brasilescola.uol.com.br/vestibular/2020/11/analise-desenvolvimento-sistema.jpg" />
                   <Carousel.Caption>
@@ -13,8 +15,10 @@ const Quarto_slid = () => {
                       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                   </Carousel.Caption>
               </Carousel.Item>
-          </Carousel></>
+          </Carousel>
+      </Lay>
+    </>
   )
 }
 
-export default Quarto_slid
+
